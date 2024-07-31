@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -21,6 +22,7 @@ public class BaseTest {
                 .lastUpdatedDate(OffsetDateTime.now())
                 .price(new BigDecimal("15.90"))
                 .upc(220102002L)
+                .myLocalDate(LocalDate.now())
                 .build();
     }
 }
